@@ -14,7 +14,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-  const db = firebase.database();
+  /* const db = firebase.database();
   collectionData = db.ref().child('Users');
 
   const getValueInput = () =>{
@@ -42,5 +42,5 @@
       username: username,
       password: passworduser
     });
-  }
+  } */
   
