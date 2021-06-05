@@ -1,4 +1,4 @@
-Este proyecto fue creado con fines académicos, el objetivo fue crear una página clonada de LinkedIn y las personas ingresarán sus credenciales
+Este proyecto fue creado con fines académicos, el objetivo fue crear una página clonada de LinkedIn y las personas ingresaran sus credenciales
 mediante la aplicación de técnicas de ingeniería social, la información era grabada en una base de datos para este caso se usó firebase.
 Para lograr tener una copia exacta de la página oficial de LinkedIn se usó la herramienta SE de Kali Linux.
 
