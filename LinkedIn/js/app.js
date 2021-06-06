@@ -1,16 +1,9 @@
  // Agregando evento click 
  // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyCfznDxJME9p0llWCuV9NwKB--btIcyFgE",
-    authDomain: "linkedin-5ae5a.firebaseapp.com",
-    databaseURL: "https://linkedin-5ae5a-default-rtdb.firebaseio.com",
-    projectId: "linkedin-5ae5a",
-    storageBucket: "linkedin-5ae5a.appspot.com",
-    messagingSenderId: "139993377494",
-    appId: "1:139993377494:web:9f29236c52365402233777",
-    measurementId: "G-H30R91360G"
-  };
+  /*var firebaseConfig = {
+    Aquí va la configuración de firebase
+  };*/
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
